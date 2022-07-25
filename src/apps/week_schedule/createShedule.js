@@ -1,7 +1,4 @@
-import { all_courses as cours } from "src/data/clases.js"
-
-let all_courses = cours.filter(cour => cour.clases.every(c => [2,3,4,5,6].includes(c.day))).filter(cour => ["3009509", "1000122-M", "1000109-M", "3010259"].includes(cour.code))
-
+import { all_courses } from "src/data/clases.js"
 export function getColor(code, group){
   const colors = [
     "rgb(228 113 93)",
@@ -128,7 +125,7 @@ function removeRepeated(nonOverlapingCourses){
   )
 }
 
-function getNonOverlapingCourses(courses){
+export function getNonOverlapingCourses(courses){
   if(courses.length === 0){
     return []
   }
@@ -165,5 +162,3 @@ function getNonOverlapingCourses(courses){
 
   return nonOverlapingClases
 }
-
-export let nonOverlapingCourses = getNonOverlapingCourses([...all_courses])
