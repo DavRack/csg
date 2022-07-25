@@ -1,6 +1,6 @@
 import { all_courses as cours } from "src/data/clases.js"
 
-let all_courses = cours.filter(cour => cour.clases.every(c => [2,3,4,5,6].includes(c.day)))
+let all_courses = cours.filter(cour => cour.clases.every(c => [2,3,4,5,6].includes(c.day))).filter(cour => ["3009509", "1000122-M", "1000109-M", "3010259"].includes(cour.code))
 
 export function getColor(code, group){
   const colors = [

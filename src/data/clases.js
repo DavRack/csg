@@ -19,7 +19,7 @@ export let all_courses = [
     code: "30074420",
     credits: 3,
     group: 1,
-    virtual: true,
+    virtual: false,
     clases: [
       {
         day: 2,
@@ -40,7 +40,7 @@ export let all_courses = [
     code: "3010585",
     credits: 3,
     group: 1,
-    virtual: true,
+    virtual: false,
     clases: [
       {
         day: 2,
@@ -247,7 +247,7 @@ export let all_courses = [
     code: "1000122-M",
     credits: 3,
     group: 1,
-    virtual: false,
+    virtual: true,
     clases: [
       {
         day: 3,
@@ -290,6 +290,66 @@ export let all_courses = [
         class_room: "12-304",
         start_hour: 16,
         end_hour: 18,
+      },
+    ]
+  },
+  {
+    name: "Cátedra Ingeniería facultad de minas",
+    code: "3009511",
+    credits: 2,
+    group: 1,
+    virtual: false,
+    clases: [
+      {
+        day: 2,
+        class_room: "41-201",
+        start_hour: 12,
+        end_hour: 14,
+      },
+    ]
+  },
+  {
+    name: "Cátedra Ingeniería facultad de minas",
+    code: "3009511",
+    credits: 2,
+    group: 2,
+    virtual: false,
+    clases: [
+      {
+        day: 4,
+        class_room: "41-201",
+        start_hour: 12,
+        end_hour: 14,
+      },
+    ]
+  },
+  {
+    name: "Cátedra colombiana: corrupción",
+    code: "1000109-M",
+    credits: 3,
+    group: 1,
+    virtual: true,
+    clases: [
+      {
+        day: 3,
+        class_room: "41-201",
+        start_hour: 10,
+        end_hour: 13,
+      },
+    ]
+  },
+  {
+    name: "Cátedra APUN",
+    code: "3009509",
+    credits: 4,
+    group: 1,
+    virtual: false,
+    clases: [
+      {
+        day: 2,
+        class_room: "M3-218",
+        start_hour: 8,
+        end_hour: 12,
       },
     ]
   },
