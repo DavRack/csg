@@ -13,8 +13,8 @@ const config = {
 
 	kit: {
 		adapter: adapter({
-      pages: 'docs',
-      assets: 'docs',
+      pages: 'deploy',
+      assets: 'deploy',
       fallback: null,
       precompress: false
     }),
@@ -22,7 +22,7 @@ const config = {
       // This can be false if you're using a fallback (i.e. SPA mode)
       default: true
     },
-    paths: {base:'/mini-apps'},
+    paths: {base:""},
     appDir: 'internal',
 	}
 };
