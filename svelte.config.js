@@ -13,8 +13,8 @@ const config = {
 
 	kit: {
 		adapter: adapter({
-      pages: 'deploy',
-      assets: 'deploy',
+      pages: 'docs',
+      assets: 'docs',
       fallback: null,
       precompress: false
     }),
