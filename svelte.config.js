@@ -12,7 +12,18 @@ const config = {
   ],
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter({
+      pages: 'docs',
+      assets: 'docs',
+      fallback: null,
+      precompress: false
+    }),
+    prerender: {
+      // This can be false if you're using a fallback (i.e. SPA mode)
+      default: true
+    },
+    paths: {base:'/mini-apps'},
+    appDir: 'internal',
 	}
 };
 

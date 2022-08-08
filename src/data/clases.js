@@ -9,8 +9,8 @@ export let all_courses = [
       {
         day: 2,
         class_room: "aula 46-114 BLOQUE 46",
-        start_hour: 6,
-        end_hour: 20,
+        start_hour: 14,
+        end_hour: 18,
       }
     ]
   },
