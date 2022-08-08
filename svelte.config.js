@@ -1,6 +1,7 @@
 import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
 
+const production = process.argv.includes("build");
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
@@ -20,9 +21,10 @@ const config = {
     }),
     prerender: {
       // This can be false if you're using a fallback (i.e. SPA mode)
-      default: true
+      default: true,
+      entries: [],
     },
-    paths: {base:""},
+    paths: {base: production? "/mini-apps" : "" },
     appDir: 'internal',
 	}
 };
